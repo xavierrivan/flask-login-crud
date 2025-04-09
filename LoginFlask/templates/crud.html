@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
+</head>
+<body>
+    <h2>Sección protegida - CRUD</h2>
+
+    <h3>Crear nuevo</h3>
+    <form action="/create" method="post">
+        <input type="text" name="nombre" placeholder="Nuevo nombre" required>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <hr>
+
+
+    <h3>Elementos actuales:</h3>
+    <ul>
+        {% for item in datos %}
+        <li>
+            {{ item.nombre }}
+            
+            <form action="/update/{{ item.id }}" method="post" style="display:inline;">
+                <input type="text" name="nombre" placeholder="Nuevo nombre" required>
+                <button type="submit">Actualizar</button>
+            </form>
+
+           
+            <a href="/delete/{{ item.id }}" onclick="return confirm('¿Seguro que deseas eliminar?')">Eliminar</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <br><br>
+    <a href="/dashboard">Volver al Dashboard</a> |
+    <a href="/logout">Cerrar sesión</a>
+</body>
+</html>
