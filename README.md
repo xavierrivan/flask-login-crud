@@ -6,7 +6,7 @@ Este proyecto es un sistema de autenticación simple con operaciones CRUD usando
 - Python 3
 - Flask (`pip install flask`)
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 - Login con usuario y contraseña (`admin / 1234`)
 - Sección protegida (CRUD solo disponible tras login)
 - Crear, leer, actualizar y eliminar elementos
