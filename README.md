@@ -13,7 +13,7 @@ Este proyecto es un sistema de autenticación simple con operaciones CRUD usando
 - Restricción de acceso a URLs protegidas
 
 ## 🎥 Demostración en video
-🔗 [Ver video demostrativo]()
+🔗 [Ver video demostrativo](https://youtu.be/pBiaE60i7fc)
 
 ## 💻 Cómo ejecutar
 ```bash
